@@ -1,5 +1,6 @@
 $(function(){
 
+    // Model
     var model = {
         init: function() {
             if (!localStorage.notes) {
@@ -17,6 +18,7 @@ $(function(){
     };
 
 
+    // Controller
     var octopus = {
         addNewNote: function(noteStr) {
             model.add({
@@ -35,7 +37,7 @@ $(function(){
         }
     };
 
-
+    // View
     var view = {
         init: function() {
             this.noteList = $('#notes');
